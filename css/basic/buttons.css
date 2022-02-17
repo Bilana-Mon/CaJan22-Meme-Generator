@@ -1,0 +1,71 @@
+.control-box .txt {
+    width: 159.7px;
+    height: 21.8px;
+    margin: 3px 0 0 6.8px;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+
+.control-box .btn {
+    width: 25px;
+    height: 22.2px;
+    margin: 24.7px 12.8px 0.2px 12.6px;
+    padding: 1.8px 1.2px 0.9px 1.5px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.control-box button:hover {
+    cursor: pointer;
+    background-color: var(--clr1);
+    border: 2px solid saddlebrown;
+}
+
+.control-box input {
+    width: 85.5px;
+    height: 20px;
+    margin: 4px 13px 0 0;
+    padding: 5.2px 4px 5.3px 3.7px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.control-box select {
+    width: 85.5px;
+    height: 30px;
+    margin: 4px 13px 0 0;
+    padding: 5.2px 4px 5.3px 3.7px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.control-box .share {
+    width: 60px;
+    height: 25px;
+    margin: 7px 53.5px 0 53.5px;
+    padding: 2.3px 11.4px 2.3px 10.4px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.control-box .download {
+    width: 80px;
+    height: 25px;
+    margin: 7px 53.5px 0 53.5px;
+    padding: 2.3px 11.4px 2.3px 8.4px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+}

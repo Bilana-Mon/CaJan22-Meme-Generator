@@ -1,0 +1,43 @@
+.img-gallery {
+    background-color: var(--clr4);
+}
+
+.img-gallery .search-bar {
+    background-color: white;
+
+    height: 51px;
+}
+
+.img-gallery .search-bar input {
+    width: 104.5px;
+    height: 11.5px;
+    margin: 0px 12.8px 1.1px 1.6px;
+    font-family: Montserrat;
+    font-size: 9.5px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--clr3);
+}
+
+.img-gallery .search-bar li {
+    width: 28px;
+    height: 11.5px;
+    margin: 9.5px 15px 8px 0;
+    font-family: Montserrat;
+    font-size: 9.5px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--clr2);
+}
+
+.personal-info-modal {
+    display: none;
+}

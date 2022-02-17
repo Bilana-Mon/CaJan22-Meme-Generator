@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--clr2);
+    font-family: montrserrat;
+}
+
+
+body {
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1em;
+}
+
+
+#my-canvas {
+    display: block;
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 20px;
+    height: 36.7px;
+    margin: 3.5px 400.8px 8px 2px;
+    font-family: montrserrat;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.img img {
+    width: 100%;
+    padding-top: 20px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+.img img:hover {
+    cursor: pointer;
+    border: 2px solid;
+}

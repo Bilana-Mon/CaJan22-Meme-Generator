@@ -1,0 +1,32 @@
+/* mobile */
+
+@media (max-width: 740px) {
+
+    .grid-container {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));
+        text-align: center;
+    }
+
+    .meme-editor {
+        display: none;
+    }
+
+}
+
+
+/* medium */
+
+@media (max-width: 470) {
+    .grid-container {
+        display: grid;
+        width: 100vw;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 2fr));
+        text-align: center;
+    }
+
+    .meme-editor {
+        display: none;
+    }
+}

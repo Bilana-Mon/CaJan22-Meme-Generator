@@ -1,0 +1,21 @@
+@font-face {
+    font-family: impact;
+    src: url(../../assets/fonts/impact/impact.ttf);
+}
+
+
+@font-face {
+    font-family: montrserrat;
+    src: url(../../assets/fonts/Montserra/Montserrat-Regular.ttf);
+}
+
+/* font awesome */
+@font-face {
+    font-family: fa;
+    src: url(../../assets/fonts/awesome/fa-brands-400.ttf);
+}
+
+@font-face {
+    font-family: fa-solid;
+    src: url(/assets/fonts/awesome/fa-solid-900.ttf);
+}
