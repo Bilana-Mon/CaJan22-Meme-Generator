@@ -18,4 +18,4 @@ function shareMeme() {
 
 function getSavedMemes() {
     return _loadMemesFromLocalStorage();
-}
+} 
