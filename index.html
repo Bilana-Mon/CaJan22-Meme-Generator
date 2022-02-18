@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 
-<body onload="init()">
+<body onload="initView()">
     <div class="main-screen" onclick="closeModal()"></div>
     <header class="header-container main-layout flex space-between align-center">
         <div class="logo">memegen</div>
@@ -23,7 +24,7 @@
 
     <section class="img-gallery main-layout">
         <div class="search-bar flex space-between">
-            <input type="search" placeholder="Enter search keyword">
+            <input type="search" id="search-meme" placeholder="Enter search keyword">
             <ul class="clean-list search-list">
                 <li><a href="#">funny</a></li>
                 <li><a href="#">comics</a></li>
@@ -33,6 +34,9 @@
         </div>
 
         <div class="gallery-container grid-container">
+            <!-- imgs here -->
+        </div>
+        <div class="saved-memes-container grid-container">
             <!-- imgs here -->
         </div>
 
@@ -76,18 +80,24 @@
         </div>
         <div class="control-box">
             <input class="txt" type="text" placeholder="Enter Text Here">
-            <button class="btn add"><i class="fa-solid fa-plus"></i></button>
-            <button class="btn switch-lines"><i class="fa-solid fa-arrow-up-arrow-down"></i></button>
-            <button class="btn delete"><i class="fa-solid fa-trash-can"></i></button>
-            <button class="btn increase-txt">🗚</button>
-            <button class="btn decrease-txt">🗛</button>
-            <button class="btn align-txt-left"><i class="fa-solid fa-align-left"></i></button>
-            <button class="btn align-txt-center"><i class="fa-solid fa-align-center"></i></button>
-            <button class="btn align-txt-right"><i class="fa-solid fa-align-right"></i></button>
-            <select name="fonts">
+            <button class="btn add-line"><span class="iconify" data-icon="carbon:add"></span></button>
+            <button class="btn switch-lines"><span class="iconify"
+                    data-icon="heroicons-solid:switch-vertical"></span></button>
+            <button class="btn delete-line"><span class="iconify" data-icon="fluent:delete-20-regular"></span></button>
+            <button class="btn increase-txt"><span class="iconify" data-icon="mdi:format-font-size-decrease"></span>
+            </button>
+            <button class="btn decrease-txt"><span class="iconify" data-icon="mdi:format-font-size-increase"></span>
+            </button>
+            <select class="fonts" name="fonts">
                 <option value="impact">Impact</option>
                 <option value="san-serif">San-Serif</option>
             </select>
+            <button class="btn align-btn-left"><span class="iconify"
+                    data-icon="ant-design:align-left-outlined"></span></button>
+            <button class="btn align-btn-center"><span class="iconify"
+                    data-icon="ant-design:align-center-outlined"></span></button>
+            <button class="btn align-btn-right"><span class="iconify"
+                    data-icon="ant-design:align-right-outlined"></span></button>
             <button class="btn stroke">𝗔</button>
             <input class="color" type="color" value="#ffffff"><i class="fa-solid fa-palette"></i></button>
             <select name="emojis">
@@ -96,7 +106,7 @@
                 <option value="sunglasses">🕶</option>
             </select>
             <button class="share">Share</button>
-            <button class="download">Download</button>
+            <button class="download" onclick="downloadMeme()">Download</button>
         </div>
     </section>
 
@@ -109,11 +119,13 @@
 
 
     <!-- <script src="js/services/util-service.js"></script> -->
-    <!-- <script src="js/services/storage-service.js"></script> -->
-    <script src="js/services/gallery-service.js"></script>
-    <script src="js/services/meme-service.js"></script>
-    <script src="js/meme-controller.js"></script>
-    <script src="js/gallery-controller.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/meme.service.js"></script>
+    <script src="js/meme.controller.js"></script>
+    <script src="js/services/gallery.service.js"></script>
+    <script src="js/gallery.controller.js"></script>
+    <script src="js/services/view.service.js"></script>
+    <script src="js/view.controller.js"></script>
 </body>
 
 </html>
