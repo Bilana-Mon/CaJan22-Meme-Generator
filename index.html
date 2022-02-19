@@ -11,27 +11,18 @@
 </head>
 
 <body onload="initView()">
-    <div class="main-screen" onclick="closeModal()"></div>
     <header class="header-container main-layout flex space-between align-center">
         <div class="logo">memegen</div>
         <nav class="nav-bar flex">
             <ul class="main-nav clean-list flex">
-                <li><a href="#" class="gallery">Gallery</a></li>
-                <li><a onclick="openModal()" href="#" class="about">About</a></li>
+                <li><a href="#" class="gallery" onclick="openGallery()">Gallery</a></li>
+                <li><a href="#" class="meme" onclick="openSavedMemes()">Meme</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="img-gallery main-layout">
-        <div class="search-bar flex space-between">
-            <input type="search" id="search-meme" placeholder="Enter search keyword">
-            <ul class="clean-list search-list">
-                <li><a href="#">funny</a></li>
-                <li><a href="#">comics</a></li>
-                <li><a href="#">dogs</a></li>
-                <li><a href="#">drinks</a></li>
-            </ul>
-        </div>
+        <div class="search-bar flex space-between"></div>
 
         <div class="gallery-container grid-container">
             <!-- imgs here -->
@@ -39,74 +30,45 @@
         <div class="saved-memes-container grid-container">
             <!-- imgs here -->
         </div>
-
-
     </section>
 
-    <section class="personal-info-modal main-layout">
-        <div class="about-me">
-            <img class="mx-auto rounded-circle" src="" alt="">
-            <div class="about-me-txt">
-                <h4>Bilana Monshtein</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, nihil id? Quis pariatur molestiae
-                    numquam itaque iure mollitia excepturi. Culpa ab ratione voluptatibus corporis harum, perspiciatis
-                    minus quae quasi fuga?
-                </p>
-                <ul class="clean-list social-buttons">
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+
 
     <section class="meme-editor main-layout">
-        <div class="canvas-container">
-            <canvas id="my-canvas" width="200" height="200"></canvas>
-        </div>
-        <div class="control-box">
-            <input class="txt" type="text" placeholder="Enter Text Here">
-            <button class="btn add-line"><span class="iconify" data-icon="carbon:add"></span></button>
-            <button class="btn switch-lines"><span class="iconify"
-                    data-icon="heroicons-solid:switch-vertical"></span></button>
-            <button class="btn delete-line"><span class="iconify" data-icon="fluent:delete-20-regular"></span></button>
-            <button class="btn increase-txt"><span class="iconify" data-icon="mdi:format-font-size-decrease"></span>
-            </button>
-            <button class="btn decrease-txt"><span class="iconify" data-icon="mdi:format-font-size-increase"></span>
-            </button>
-            <select class="fonts" name="fonts">
-                <option value="impact">Impact</option>
-                <option value="san-serif">San-Serif</option>
-            </select>
-            <button class="btn align-btn-left"><span class="iconify"
-                    data-icon="ant-design:align-left-outlined"></span></button>
-            <button class="btn align-btn-center"><span class="iconify"
-                    data-icon="ant-design:align-center-outlined"></span></button>
-            <button class="btn align-btn-right"><span class="iconify"
-                    data-icon="ant-design:align-right-outlined"></span></button>
-            <button class="btn stroke">𝗔</button>
-            <input class="color" type="color" value="#ffffff"><i class="fa-solid fa-palette"></i></button>
-            <select name="emojis">
-                <option value="hat">🎩</option>
-                <option value="cat">🐱</option>
-                <option value="sunglasses">🕶</option>
-            </select>
-            <button class="share">Share</button>
-            <button class="download" onclick="downloadMeme()">Download</button>
+        <div class="meme-container flex">
+            <div class="canvas-container">
+                <canvas id="my-canvas" width="200" height="200"></canvas>
+            </div>
+            <div class="control-box">
+                <input class="txt" type="text" placeholder="Enter Text Here">
+                <div class="control-box-btns flex">
+                    <button class="btn add-line"><span class="iconify" data-icon="carbon:add"></span></button>
+                    <button class="btn switch-lines"><span class="iconify"
+                            data-icon="heroicons-solid:switch-vertical"></span></button>
+                    <button class="btn delete-line"><span class="iconify"
+                            data-icon="fluent:delete-20-regular"></span></button>
+                    <button class="btn increase-txt"><span class="iconify"
+                            data-icon="mdi:format-font-size-decrease"></span>
+                    </button>
+                    <button class="btn decrease-txt"><span class="iconify"
+                            data-icon="mdi:format-font-size-increase"></span>
+                    </button>
+                </div>
+                <div class="control-box-btns2 flex">
+                    <select class="fonts" name="fonts">
+                        <option value="impact">Impact</option>
+                        <option value="san-serif">San-Serif</option>
+                    </select>
+                    <button class="btn align-btn-left"><span class="iconify"
+                            data-icon="ant-design:align-left-outlined"></span></button>
+                    <button class="btn align-btn-center"><span class="iconify"
+                            data-icon="ant-design:align-center-outlined"></span></button>
+                    <button class="btn align-btn-right"><span class="iconify"
+                            data-icon="ant-design:align-right-outlined"></span></button>
+                    <input class="color" type="color" value="#ffffff"><i class="fa-solid fa-palette"></i></button>
+                    <button class="download" onclick="downloadMeme()">Download</button>
+                </div>
+            </div>
         </div>
     </section>
 

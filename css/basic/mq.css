@@ -1,6 +1,10 @@
 /* mobile */
 
-@media (max-width: 740px) {
+@media screen and (max-width: 414px) {
+    .main-layout {
+        max-width: 414px;
+        margin: 0 auto;
+    }
 
     .grid-container {
         display: grid;
@@ -10,7 +14,65 @@
     }
 
     .meme-editor {
-        display: none;
+        min-height: 100vh;
+        width: 100%;
+        align-items: center;
+        background-color: var(--clr4);
+    }
+
+    .meme-container {
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .canvas-container {
+        padding: 10px;
+    }
+
+    .control-box {
+        width: 50%;
+    }
+
+    .control-box-btns {
+        flex-wrap: wrap;
+    }
+
+    .control-box-btns2 {
+        flex-wrap: wrap;
+    }
+
+    .header-container {
+        height: 100%;
+    }
+
+    .header-container .logo {
+        height: 100%;
+    }
+
+    .footer-container {
+        width: 100%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 30px;
+
+    }
+
+    .footer-container .logo {
+        margin-block-start: 51px;
+        color: white;
+        margin: 3.5px 5.8px 8px 0.2px;
+        padding-left: 25%;
+        padding-right: 70%;
+    }
+
+    .footer-container small {
+        height: 100%;
+        padding-left: 10px;
+        text-align: center;
+
     }
 
 }
@@ -18,7 +80,12 @@
 
 /* medium */
 
-@media (max-width: 470) {
+@media screen and (min-width:414px) and(max-width: 740) {
+    .main-layout {
+        max-width: 740px;
+        margin: 0 auto;
+    }
+
     .grid-container {
         display: grid;
         width: 100vw;
@@ -28,5 +95,43 @@
 
     .meme-editor {
         display: none;
+    }
+
+    .header-container {
+        height: 100%;
+    }
+
+    .header-container nav {
+        height: 100%;
+    }
+
+    .header-container .logo {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .header-container .main-nav a {
+        padding-left: 6em;
+        font-size: 3.5em;
+    }
+
+    .footer-container {
+        height: 100%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 30px;
+
+    }
+
+    .footer-container .logo {
+        margin-block-start: 31px;
+        color: white;
+    }
+
+    .footer-container small {
+        height: 100%;
+        padding-left: 10px;
+        text-align: center;
+
     }
 }

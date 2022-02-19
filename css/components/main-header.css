@@ -3,6 +3,12 @@
     color: white;
 }
 
+.header-container .logo {
+    margin-block-start: 0;
+    padding-left: 10px;
+    color: white;
+}
+
 .header-container nav {
     height: 100%;
 }
@@ -18,16 +24,10 @@
 
 .header-container .main-nav a {
     display: flex;
-    width: 36.7px;
-    height: 32.8px;
-    margin-top: 36.7px;
-    padding-left: 4px;
     font-family: Montserrat;
-    font-size: 9.5px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.2;
     letter-spacing: normal;
     text-align: center;
     transition: box-shadow .3s;

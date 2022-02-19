@@ -3,3 +3,4 @@
 function _initView() {
     initGallery();
 }
+

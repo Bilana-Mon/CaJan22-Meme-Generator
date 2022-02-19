@@ -8,3 +8,9 @@
     font-family: montrserrat;
     src: url(../../assets/fonts/Montserra/Montserrat-Regular.ttf);
 }
+
+
+@font-face {
+    font-family: balloon;
+    src: url(../../assets/fonts/balloon/BalonkuRegular-la1w.otf);
+}

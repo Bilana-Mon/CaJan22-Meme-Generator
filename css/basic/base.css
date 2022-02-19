@@ -21,6 +21,12 @@ h6 {
     margin: 0 0 1em;
 }
 
+h4 {
+    font-family: balloon;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
 
 #my-canvas {
     display: block;
@@ -34,21 +40,20 @@ a {
 
 .logo {
     width: 20px;
-    height: 36.7px;
-    margin: 3.5px 400.8px 8px 2px;
-    font-family: montrserrat;
+    font-family: balloon;
     font-size: 2.5rem;
     font-weight: bold;
 }
 
 .img img {
     width: 100%;
+    height: 100%;
     padding-top: 20px;
     margin: 10px;
     object-fit: cover;
+
 }
 
-.img img:hover {
+.img:hover {
     cursor: pointer;
-    border: 2px solid;
 }

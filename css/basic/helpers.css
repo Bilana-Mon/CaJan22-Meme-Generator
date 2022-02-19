@@ -30,61 +30,11 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
-    /* grid-template-rows: repeat(9, minmax(200px, 5vw)); */
     grid-template-rows: auto;
     grid-auto-flow: row;
     gap: 10.5px;
-    padding: 60px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
     width: auto;
-}
-
-/* icons */
-
-
-.fa::before {
-    font-family: fa;
-}
-
-.fa-brands.fa-facebook::before {
-    content: "\f09a";
-}
-
-.fa-brands .fa-linkedin::before {
-    content: "\f08c";
-}
-
-.fa-brands.fa-github::before {
-    content: "\f09b";
-}
-
-.fa-solid::before {
-    font-family: fa-solid;
-}
-
-.fa-solid .fa-plus::before {
-    content: "\2b";
-}
-
-.fa-solid .fa-arrow-up-arrow-down::before {
-    content: "\e099";
-}
-
-.fa-solid .fa-trash-can::before {
-    content: "\f2ed";
-}
-
-.fa-solid .fa-align-left::before {
-    content: "\f036";
-}
-
-.fa-solid .fa-align-right::before {
-    content: "\f038";
-}
-
-.fa-solid .fa-align-center::before {
-    content: "\f037";
-}
-
-.fa-solid .fa-palette::before {
-    content: "\f53f";
 }

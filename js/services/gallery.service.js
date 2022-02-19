@@ -43,6 +43,7 @@ function _renderGallery() {
 }
 
 function _renderSavedMemes() {
+    document.querySelector('.saved-memes-container').style.display = 'none';
     var imgs = getSavedMemes();
 
     if (imgs) {
@@ -52,20 +53,15 @@ function _renderSavedMemes() {
             <img src="${img}" class="items img-item-${img.id}">
             </div>`
         });
-        gSavedMemes.innerHTML = strHTML.join('');
+        gSavedMemes.innerHTML += `<h4>Your Saved Memes 🤩</h4>`
+        gSavedMemes.innerHTML += strHTML.join('');
     }
     else {
-        gSavedMemes.innerHTML = `<div>No saved memes</div>`
+        gSavedMemes.innerHTML += `<div>No saved memes 😔</div>`
     }
 }
 
-function _openModal() {
-    document.body.classList.toggle('modal-open');
-}
 
-function _closeModal() {
-    document.body.classList.remove('modal-open');
-}
 
 function _getImgs() {
     var imgs = gImgs;
