@@ -1,11 +1,13 @@
 .footer-container {
+    padding-left: 45%;
+    padding-bottom: 5px;
+    width: 100%;
     background-color: var(--clr1);
 }
 
 .footer-container .logo {
     margin-block-start: 51px;
     color: white;
-    margin-left: 30%;
 }
 
 .footer-container small {
@@ -14,5 +16,4 @@
     letter-spacing: 0.05rem;
     text-align: center;
     color: #fff;
-    margin-left: 30%;
 }

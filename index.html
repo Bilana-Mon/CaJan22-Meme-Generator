@@ -11,7 +11,7 @@
 </head>
 
 <body onload="initView()">
-    <header class="header-container main-layout flex space-between align-center">
+    <header class="header-container flex space-between align-center">
         <div class="logo">memegen</div>
         <nav class="nav-bar flex">
             <ul class="main-nav clean-list flex">
@@ -22,8 +22,6 @@
     </header>
 
     <section class="img-gallery main-layout">
-        <div class="search-bar flex space-between"></div>
-
         <div class="gallery-container grid-container">
             <!-- imgs here -->
         </div>
@@ -48,10 +46,10 @@
                     <button class="btn delete-line"><span class="iconify"
                             data-icon="fluent:delete-20-regular"></span></button>
                     <button class="btn increase-txt"><span class="iconify"
-                            data-icon="mdi:format-font-size-decrease"></span>
+                            data-icon="mdi:format-font-size-increase"></span>
                     </button>
                     <button class="btn decrease-txt"><span class="iconify"
-                            data-icon="mdi:format-font-size-increase"></span>
+                            data-icon="mdi:format-font-size-decrease"></span>
                     </button>
                 </div>
                 <div class="control-box-btns2 flex">
@@ -72,7 +70,7 @@
         </div>
     </section>
 
-    <footer class="footer-container main-layout">
+    <footer class="footer-container">
         <div class="logo">memegen</div>
         <small class="small">® all rights reserved 2022</small>
     </footer>
@@ -80,7 +78,6 @@
 
 
 
-    <!-- <script src="js/services/util-service.js"></script> -->
     <script src="js/services/storage.service.js"></script>
     <script src="js/services/meme.service.js"></script>
     <script src="js/meme.controller.js"></script>

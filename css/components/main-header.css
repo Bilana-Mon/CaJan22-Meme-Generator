@@ -1,6 +1,9 @@
 .header-container {
+    padding-left: 30px;
+    padding-right: 60px;
     background-color: var(--clr1);
     color: white;
+    margin-bottom: 51px;
 }
 
 .header-container .logo {
@@ -18,7 +21,15 @@
     padding-inline-start: 0;
 }
 
-.header-container .main-nav li {
+.header-container .main-nav li:not(:first-child) {
+    padding-left: 5px;
+}
+
+.header-container .main-nav li:not(:last-child) {
+    padding-right: 5px;
+}
+
+.header-container .main-nav li:not(:last-child) {
     border-inline-end: 1px solid var(--clr5);
 }
 

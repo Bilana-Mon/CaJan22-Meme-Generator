@@ -116,6 +116,8 @@ function _attachEventSwitchLinesFocus() {
 
 function _attachEventDeleteLine() {
     gDeleteLine.addEventListener('click', (ev) => {
+        console.log(gMeme.lines);
+        console.log(gCurrentLine);
         if (gMeme.lines.length) {
             var newFocusedLine = gMeme.lines.shift();
             gCurrentLine = newFocusedLine;

@@ -40,6 +40,10 @@
     text-align: center;
 }
 
+.control-box .color:hover {
+    background: var(--clr1);
+}
+
 .control-box select {
     width: 85.5px;
     height: 30px;
@@ -48,6 +52,17 @@
     border-radius: 6px;
     background-color: #fff;
     text-align: center;
+    border: 2px solid gray;
+}
+
+select:hover {
+    color: whitesmoke;
+    background: var(--clr1);
+}
+
+select:focus>option:checked {
+    background: white;
+    color: var(--clr1);
 }
 
 .control-box .download {

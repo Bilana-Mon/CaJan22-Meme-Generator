@@ -1,16 +1,12 @@
 .img-gallery {
+    padding-top: 20px;
     background-color: var(--clr4);
+    height: 100%;
+    padding-bottom: 20px;
 }
-
-.img-gallery .search-bar {
-    background-color: white;
-    height: 51px;
-}
-
 
 .meme-editor {
     height: 100%;
-
     background-color: var(--clr4);
 }
 
@@ -22,7 +18,9 @@
 
 .canvas-container {
     display: flex;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .control-box {

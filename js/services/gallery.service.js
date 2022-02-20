@@ -35,9 +35,7 @@ function _renderGallery() {
 
     var strHTML = imgs.map(img => {
         return `
-        <div class="img">
-        <img src="${img.url}" alt="" id="${img.id}" class="items img-item-${img.id}">
-        </div>`
+        <img src="${img.url}" alt="" id="${img.id}" class="items img-item-${img.id}">`
     });
     gGallery.innerHTML = strHTML.join('');
 }
@@ -48,10 +46,7 @@ function _renderSavedMemes() {
 
     if (imgs) {
         var strHTML = imgs.map(img => {
-            return `
-            <div class="img">
-            <img src="${img}" class="items img-item-${img.id}">
-            </div>`
+            return `<img src="${img}" class="items img-item-${img.id}">`
         });
         gSavedMemes.innerHTML += `<h4>Your Saved Memes 🤩</h4>`
         gSavedMemes.innerHTML += strHTML.join('');
